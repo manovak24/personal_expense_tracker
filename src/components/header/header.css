@@ -1,0 +1,9 @@
+.header-container {
+    width: 50%;
+    margin: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
