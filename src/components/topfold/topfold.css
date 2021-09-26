@@ -1,0 +1,13 @@
+.topfold {
+    display: flex;
+    justify-content: space-between;
+    margin: 6px 12px;
+    padding: 12px 0px;
+    align-items: center;
+}
+
+.home-topfold {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
