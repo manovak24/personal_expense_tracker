@@ -9,21 +9,34 @@ const Topfold = () => {
 
     return (
         <div className='topfold'>
+            {window.location.pathname === '/' ? (
             <div className='home-topfold'>
-                <div className='searchbar'>
-                    <p>add search logo</p>
-                    <input 
-                    placeholder='Search for expense'
-                    value={search}
-                    onChange={(e) => handleSerach(e)}
-                    />
-                </div>
+            <div className='searchbar'>
+                <i>(logo)</i>
+                <input 
+                placeholder='Search for expense'
+                value={search}
+                onChange={(e) => handleSerach(e)}
+                />
+            </div>
 
-                <div className='add-button'>
-                    <p>add an add button</p>
-                    <label>Add</label>
+            <div className='add-button'>
+                <i>(logo)</i>
+                <label>Add</label>
+            </div>
+            </div> ) : ( 
+            <div className='add-topfold'>
+                <div className='add-button-topfold'>
+                    <i>logo</i>
+                    <label>Back</label>
+                </div>
+                <div className='add-button-topfold'>
+                    <i>logo</i>
+                    <label>Cancel</label>
                 </div>
             </div>
+            )}
+            
         </div>
     )
 }
